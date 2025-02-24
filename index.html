@@ -1,170 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Brandy Lopez</title>
-        <link rel="icon" type="image/x-icon" href="https://cdn.icon-icons.com/icons2/546/PNG/512/1455555011_users-10_icon-icons.com_53271.png" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Brandy Lopez</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpeg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Brandy Lopez Pacheco</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        header {
+            text-align: center;
+        }
+        img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        h1, h2 {
+            color: #222;
+        }
+        section {
+            margin-top: 20px;
+        }
+        .info {
+            display: flex;
+            justify-content: space-between;
+        }
+        .language-switch {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .language-switch button{
+            background-color: white;
+            color: black;
+            border-color:gray ;
+            border-radius: 6px;
+            width: 200px;
+            height: auto;
+        }
+    </style>
+    <script>
+        function switchLanguage(lang) {
+            const elements = document.querySelectorAll("[data-es], [data-en]");
+            elements.forEach(el => {
+                el.innerHTML = el.getAttribute(`data-${lang}`);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <button onclick="switchLanguage('es')">Español</button>
+            <button onclick="switchLanguage('en')">English</button>
+        </div>
+        <header>
+            <h1 data-es="Brandy Lopez Pacheco" data-en="Brandy Lopez Pacheco">Brandy Lopez Pacheco</h1>
+            <p data-es="Desarrollador Fullstack | Angular | NestJS | Docker" data-en="Fullstack Developer | Angular | NestJS | Docker">Desarrollador Fullstack | Angular | NestJS | Docker</p>
+        </header>
+        <section>
+            <h2 data-es="Información Personal" data-en="Personal Information">Información Personal</h2>
+            <p><strong>Email:</strong> brandylp11@gmail.com</p>
+            <p><strong data-es="Ubicación:" data-en="Location:">Ubicación:</strong> Barranquilla, Colombia</p>
+        </section>
+        <section>
+            <h2 data-es="Experiencia" data-en="Experience">Experiencia</h2>
+            <div>
+                <h3>Ried Company</h3>
+                <p data-es="Desarrollador Web" data-en="Web Developer">Desarrollador Web</p>
+                <ul>
+                    <li data-es="Realización de web multipropósito" data-en="Development of multipurpose website">Realización de web multipropósito</li>
+                    <li data-es="Diseño web y desarrollo responsive" data-en="Web design and responsive development">Diseño web y desarrollo responsive</li>
+                    <li data-es="Tecnologías usadas: Bootstrap y jQuery" data-en="Technologies used: Bootstrap and jQuery">Tecnologías usadas: Bootstrap y jQuery</li>
                 </ul>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Brandy
-                        <span class="text-primary">Lopez</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Calle 75b #41-87 Torres de San Jose · (317) 289-8873 ·
-                        <a href="mailto:brandylp11@gmail.com">brandylp11@gmail.com</a>
-                    </div>
-                    <p class="lead mb-5">Junior Web Developer / Developer Junior Python  </p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://github.com/brandyllp"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://www.facebook.com/programmerlp/"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0"> Front-end Developer </h3>
-                            <div class="subheading mb-3">Ried</div>
-                            <p>Realizando pagina web con multiples propositos: Interfaz amigable para el usuario, Responsiva para multiples dispotiva y llevando el uso de Framework como Jquery y Bootstrap</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Abril 2021 - Present</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Institucion Educativa Dolores Maria Ucros</h3>
-                            <div class="subheading mb-3">Bachiller</div>
-                            <div>Enfasis en Ciencias Basicas</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">January 2017 - December 2019</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Universidad del Atlantico</h3>
-                            <div class="subheading mb-3">Musica Profesional</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">April 2021 - Actual</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-bootstrap"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-git"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Interesado en la tecnologia, en como esta va cambiando a lo largo del tiempo y de como es una herramienta tan util para el avance del mundo y nuestro dia a dia</p>
-                    <p class="mb-0">Amante y apasionado a la musica. Considero que es uno de las mejores cosas para llegar al alma de las personas y entregarles parte de mi corazon</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Curso De POO Y Algoritmos Con Python - Platzi
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Curso De Introducción Al Pensamiento Computacional Con Python - Platzi
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Curso De Fundamentos De Matemáticas - Platzi
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Curso De Álgebra - Platzi
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            8
-                            <sup>th </sup>
-                            Place - Universidad del Norte - Olimpiadas Matematicas 10 Años
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+            <div>
+                <h3>Heath Care Univista</h3>
+                <p data-es="Fullstack Developer" data-en="Fullstack Developer">Fullstack Developer</p>
+                <ul>
+                    <li data-es="Sitio web responsive" data-en="Responsive website">Sitio web responsive</li>
+                    <li data-es="Captura de leads y plugin para Odoo CRM" data-en="Lead capture and plugin for Odoo CRM">Captura de leads y plugin para Odoo CRM</li>
+                    <li>Frontend: Angular, Ng Zorro, TypeScript, SCSS</li>
+                    <li>Backend: NestJS, OdooCRM</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Divano Rent a Car</h3>
+                <p data-es="Fullstack Developer" data-en="Fullstack Developer">Fullstack Developer</p>
+                <ul>
+                    <li data-es="Desarrollo del sitio web principal con WordPress" data-en="Development of main website with WordPress">Desarrollo del sitio web principal con WordPress</li>
+                    <li data-es="Integración de plugin para comunicación con software de renta" data-en="Plugin integration for rental software communication">Integración de plugin para comunicación con software de renta</li>
+                    <li data-es="Sistema de Callcenter basado en Issabel y Asterisk" data-en="Call center system based on Issabel and Asterisk">Sistema de Callcenter basado en Issabel y Asterisk</li>
+                    <li data-es="Bot generador de texto a voz" data-en="Text-to-speech bot">Bot generador de texto a voz</li>
+                    <li data-es="Deploy en AWS" data-en="Deployed on AWS">Deploy en AWS</li>
+                    <li data-es="Dockerización y creación de imágenes de backup" data-en="Dockerization and backup image creation">Dockerización y creación de imágenes de backup</li>
+                    <li data-es="Desarrollo de sistema de contabilidad, consumo de API de renta" data-en="Development of accounting system, rental API consumption">Desarrollo de sistema de contabilidad, consumo de API de renta</li>
+                    <li data-es="Verificación de identidad con Amazon" data-en="Identity verification with Amazon">Verificación de identidad con Amazon</li>
+                    <li data-es="Organización de vehículos para renta" data-en="Vehicle organization for rental">Organización de vehículos para renta</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Divano Tires</h3>
+                <p data-es="Fullstack Developer" data-en="Fullstack Developer">Fullstack Developer</p>
+                <ul>
+                    <li data-es="Website responsive" data-en="Responsive website">Website responsive</li>
+                    <li data-es="Captura de leads y gestión de citas en Odoo" data-en="Lead capture and appointment management in Odoo">Captura de leads y gestión de citas en Odoo</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2 data-es="Habilidades" data-en="Skills">Habilidades</h2>
+            <ul>
+                <li>Frontend: Angular, Ng Zorro, TypeScript, SCSS</li>
+                <li>Backend: NestJS, NodeJS, Python</li>
+                <li>Bases de datos: MySQL, MongoDB</li>
+                <li>Infraestructura: Docker, AWS</li>
+                <li>Telefonía: Asterisk, Issabel</li>
+                <li>Diseño: Adobe XD, Figma</li>
+                <li>CRM: Odoo</li>
+                <li>Control de versiones: Git</li>
+            </ul>
+        </section>
+    </div>
+</body>
 </html>
